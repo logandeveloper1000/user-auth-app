@@ -1,21 +1,21 @@
 # React + Firebase User Authentication
 
-## 🔐 Live Demo
-[https://logan-user-authentication.netlify.app](https://logan-user-authentication.netlify.app)
+## Live Demo
+https://logan-user-authentication.netlify.app
 
-## 📄 Description
+## Description
 
 This project is a modern, responsive user authentication system built with React and Firebase. It includes:
 
-- ✅ Email and password registration and login
-- ✅ Google Sign-In with Firebase OAuth
-- ✅ Slide-down modals for success and error feedback
-- ✅ Protected dashboard route after login
-- ✅ Delete account feature with confirmation modal
-- ✅ Clean UI styled with custom CSS
-- ✅ Deployed live on Netlify
+- Email and password registration and login
+- Google Sign-In with Firebase OAuth
+- Slide-down modals for success and error feedback
+- Protected dashboard route after login
+- Delete account feature with confirmation modal
+- Clean UI styled with custom CSS
+- Deployed live on Netlify
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - React
 - Firebase Authentication
@@ -24,7 +24,7 @@ This project is a modern, responsive user authentication system built with React
 - CSS3 (custom styling)
 - Netlify (hosting)
 
-## 🚀 Setup Instructions
+## Setup Instructions
 
 1. Clone the repository:
 
@@ -49,7 +49,7 @@ const firebaseConfig = {
   apiKey: 'YOUR_API_KEY',
   authDomain: 'YOUR_DOMAIN',
   projectId: 'YOUR_PROJECT_ID',
-  ...
+  // ...
 };
 
 const app = initializeApp(firebaseConfig);
@@ -63,14 +63,10 @@ export const googleProvider = new GoogleAuthProvider();
 npm start
 ```
 
-## 📦 Deployment
+## Deployment
 
-This project is deployed using [Netlify](https://www.netlify.com). Make sure to add your Netlify domain under **Authorized Domains** in the Firebase Console.
+This project is deployed using Netlify. Make sure to add your Netlify domain under Authorized Domains in the Firebase Console.
 
-## 🧑‍💻 Author
+## Author
 
-[Gabriel Logan](https://logan-user-authentication.netlify.app)
-
----
-
-Feel free to fork or contribute to this project!
+Gabriel Logan
