@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# React + Firebase User Authentication
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🔐 Live Demo
+[https://logan-user-authentication.netlify.app](https://logan-user-authentication.netlify.app)
 
-## Available Scripts
+## 📄 Description
 
-In the project directory, you can run:
+This project is a modern, responsive user authentication system built with React and Firebase. It includes:
 
-### `npm start`
+- ✅ Email and password registration and login
+- ✅ Google Sign-In with Firebase OAuth
+- ✅ Slide-down modals for success and error feedback
+- ✅ Protected dashboard route after login
+- ✅ Delete account feature with confirmation modal
+- ✅ Clean UI styled with custom CSS
+- ✅ Deployed live on Netlify
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠 Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React
+- Firebase Authentication
+- React Router
+- JavaScript (ES6)
+- CSS3 (custom styling)
+- Netlify (hosting)
 
-### `npm test`
+## 🚀 Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Add your Firebase configuration to `firebase.js`:
 
-### `npm run eject`
+```js
+import { initializeApp } from 'firebase/app';
+import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+const firebaseConfig = {
+  apiKey: 'YOUR_API_KEY',
+  authDomain: 'YOUR_DOMAIN',
+  projectId: 'YOUR_PROJECT_ID',
+  ...
+};
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export const googleProvider = new GoogleAuthProvider();
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+## 📦 Deployment
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project is deployed using [Netlify](https://www.netlify.com). Make sure to add your Netlify domain under **Authorized Domains** in the Firebase Console.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧑‍💻 Author
 
-### Code Splitting
+[Gabriel Logan](https://logan-user-authentication.netlify.app)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork or contribute to this project!
