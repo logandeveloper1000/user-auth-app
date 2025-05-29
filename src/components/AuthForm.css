@@ -1,0 +1,70 @@
+/* src/components/AuthForm.css */
+
+.auth-form-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.auth-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: #333;
+}
+
+.auth-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form-container input {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.auth-form-container input:focus {
+  border-color: #4e54c8;
+  outline: none;
+}
+
+.auth-form-container button {
+  padding: 0.75rem;
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.auth-form-container button:hover {
+  background: linear-gradient(to right, #3e44b0, #7a80ea);
+}
+
+.auth-form-container p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

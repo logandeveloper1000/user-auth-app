@@ -1,0 +1,42 @@
+/* Reset & base styles */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center everything in the viewport */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+}
+
+/* The app-level container must do the centering */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General link style */
+a {
+  color: #4e54c8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: smooth transitions for inputs & buttons */
+input, button {
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
