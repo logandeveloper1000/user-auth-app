@@ -3,13 +3,13 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD54kGOh-xLMeAh_RX5bu8TRMZliNhOB4A",
-  authDomain: "portfolio-logandeveloper.firebaseapp.com",
-  projectId: "portfolio-logandeveloper",
-  storageBucket: "portfolio-logandeveloper.firebasestorage.app",
-  messagingSenderId: "546326089695",
-  appId: "1:546326089695:web:5a638475553621ee96fe6a",
-  measurementId: "G-WVBMG7XF6F"
+  apiKey: "AIzaSyB1TWj5WC5yEWYmQCkc8pqx5xvrkhEbN3A",
+  authDomain: "logan-portolio.firebaseapp.com",
+  projectId: "logan-portolio",
+  storageBucket: "logan-portolio.firebasestorage.app",
+  messagingSenderId: "254880871321",
+  appId: "1:254880871321:web:040bb97bce77b7c34b5908",
+  measurementId: "G-4VR49C3620"
 };
 
 const app = initializeApp(firebaseConfig);
